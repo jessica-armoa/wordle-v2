@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Wordle PPY</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div id="cabecera">
+    <div class="content-select">
+      <select name="lang" id="lang">
+        <option value="EN">English</option>
+        <option value="ES">Español</option>
+      </select>
+    </div>
+    <div id="title">
+      <h1>W O </h1>
+      <h1 id='r'> R </h1>
+      <h1> D L E</h1>
+    </div>
+    <div id="contadores">
+      <p id="intentos-restantes">❤</p>
+      <p id="aciertos">Aciertos:</p>
+    </div>
+
+  </div>
+
+  <input type="text" id="guess-input">
+  <button id="guess-button">Intentar</button>
+  <div id='grid'></div>
+
+  <p id="correct"></p>
+  <p id="guesses"></p>
+  <button id="recargar">Volver a jugar</button>
+</body>
+
+</html>

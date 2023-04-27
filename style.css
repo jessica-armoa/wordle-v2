@@ -1,0 +1,172 @@
+/*
+Colores
+rosa : #B11F5B;
+verde:  #3cb34a;
+amarillo: #f3c237;
+azul-fondo: #141133;
+gris: #ced7da;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: linear-gradient(rgba(99, 99, 99, 0.5),rgba(0, 0, 0, 0.7)),url(./images/fondo-galaxia.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #141133;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#cabecera{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+}
+
+h1 {
+  font-family: 'Sigmar', cursive;
+  color: #3cb34a;
+  text-align: center;
+  margin-top: 20px;
+}
+#fondo{
+  position: absolute;
+}
+#title{
+  display: flex;
+  justify-content:center;
+  width: 70%;
+}
+#r{
+  color:#f3c237;
+  margin-right:10px;
+  margin-left:10px;
+  transform: rotate(30deg);
+}
+
+#contadores{
+  width: auto;
+}
+p{
+  color:#f0f0f0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-align: center;
+  align-self: center;
+}
+.content-select {
+  width: 20%;
+  max-width: 100px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+.content-select select {
+  width: 100%;
+  cursor: pointer;
+  padding: 7px 10px;
+  height: 42px;
+  background: #f0f0f0;
+  color: #7b7b7b;
+  font-size: 1em;
+  font-family:
+    'Quicksand', sans-serif;
+  border-radius: 12px;
+}
+
+
+h2{
+  color:#fff;
+  margin:5px;
+}
+
+#guess-input{
+  display: block;
+  margin: 0 auto 20px;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  padding: 1em;
+  background-color: #ccc;
+  box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+input:focus {
+  background-color: white;
+  transform: scale(1.05);
+  box-shadow: 7px 10px 24px 3px rgba(0, 0, 0, 0.75);
+}
+
+button{
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #0CBABA;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.15);
+}
+button:disabled{
+  opacity: 0.5;
+}
+#recargar{/*boton volver a jugar*/
+  display: none;
+}
+button:active {
+  box-shadow: inset 4px 4px 10px -1px rgba(0, 0, 0, 0.15),
+      inset -4px -4px 10px -1px rgba(255, 255, 255, 0.7);
+  transform: scale(0.95);
+}
+#correct{
+  margin:0;
+}
+#guesses{
+  text-align: center;
+  margin: 0;
+}
+
+.letter {
+  padding: 5px;
+  margin: 3px;
+  min-width: 20px;
+  border-radius: 15px;
+  text-align: center;
+  font-weight: bold;
+  display: inline-block
+}
+
+#grid{
+  margin-top: 15px;
+  margin-bottom: 5px;
+  margin-right: 30%;
+  margin-left: 30%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+.input-area {
+  margin: 30px;
+}
